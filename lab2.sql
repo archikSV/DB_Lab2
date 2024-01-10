@@ -1,9 +1,10 @@
--- Task 2.5: Student count with minimal grade
-SELECT COUNT(*) AS students_with_min_math_grade
+-- Task 2.6: Student count with maximal grade
+SELECT COUNT(*) AS students_with_max_math_grade
 FROM Student_Grades
-WHERE min_subject_name = 'Mathematics'
-AND min_grade = (
-  SELECT MIN(min_grade)
+WHERE max_subject_name = 'Mathematics'
+AND max_grade = (
+  SELECT MAX(max_grade)
   FROM Student_Grades
-  WHERE min_subject_name = 'Mathematics'
+  WHERE max_subject_name = 'Mathematics'
 );
+
