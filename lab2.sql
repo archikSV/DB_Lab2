@@ -1,5 +1,9 @@
--- Task 2.4: Student count in the countries
-SELECT country, COUNT(*) AS student_count
+-- Task 2.5: Student count with minimal grade
+SELECT COUNT(*) AS students_with_min_math_grade
 FROM Student_Grades
-GROUP BY country
-ORDER BY student_count;
+WHERE min_subject_name = 'Mathematics'
+AND min_grade = (
+  SELECT MIN(min_grade)
+  FROM Student_Grades
+  WHERE min_subject_name = 'Mathematics'
+);
