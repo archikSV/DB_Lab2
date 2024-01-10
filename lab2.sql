@@ -1,6 +1,3 @@
--- Task 1.6: Like Select ('a')
-SELECT email
-FROM Student_Grades
-WHERE email LIKE 'a%';
-
-
+-- Task 2.1: Minimal average grade
+SELECT MIN(average_grade_per_year) AS min_average_grade
+FROM Student_Grades;
