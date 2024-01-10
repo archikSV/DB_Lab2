@@ -1,5 +1,6 @@
--- Task 1.5: Like Select (44)
-SELECT *
+-- Task 1.6: Like Select ('a')
+SELECT email
 FROM Student_Grades
-WHERE contact_phone LIKE '%44%';
+WHERE email LIKE 'a%';
+
 
