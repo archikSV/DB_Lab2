@@ -1,4 +1,4 @@
--- Task 1.1: Grade Select
-SELECT student_name
+-- Task 1.2: Age Select
+SELECT *
 FROM Student_Grades
-WHERE min_grade BETWEEN 4 AND 6;
+WHERE EXTRACT(YEAR FROM AGE(date_of_birth)) = 20;
