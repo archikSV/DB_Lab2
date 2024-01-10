@@ -1,4 +1,5 @@
--- Task 1.4: Name Select (John Doe)
+-- Task 1.5: Like Select (44)
 SELECT *
 FROM Student_Grades
-WHERE student_name = 'John Doe';
+WHERE contact_phone LIKE '%44%';
+
