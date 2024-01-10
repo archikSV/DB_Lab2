@@ -1,3 +1,3 @@
---Practice 1: Data delete (ID 3).
-DELETE FROM Students
-WHERE student_id = 3
+--Practice 1: Select student_name and age (age >= 20).
+SELECT student_name, age FROM Students
+WHERE age >= 20
