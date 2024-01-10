@@ -1,4 +1,4 @@
--- Task 1.3: Age Select (18-24)
+-- Task 1.4: Name Select (John Doe)
 SELECT *
 FROM Student_Grades
-WHERE EXTRACT(YEAR FROM AGE(CURRENT_DATE, date_of_birth)) BETWEEN 18 AND 24;
+WHERE student_name = 'John Doe';
