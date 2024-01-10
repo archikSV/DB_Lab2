@@ -1,4 +1,3 @@
---Practice 1: Data update (John Doe, age++).
-UPDATE Students
-SET age = age + 1
-WHERE student_name = 'John Doe'
+--Practice 1: Data delete (ID 3).
+DELETE FROM Students
+WHERE student_id = 3
