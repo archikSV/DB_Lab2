@@ -1,9 +1,4 @@
---Practice 1: Add data to Courses.
-INSERT INTO Courses (course_name, student_id)
-VALUES ('Mathematics', 1),
-       ('Physics', 2),
-	   ('Information Technologies', 2),
-       ('Biology', 4),
-	   ('Art', 4),
-	   ('Biology', 1);
-
+--Practice 1: Join Select.
+SELECT Students.student_name, Courses.course_name
+FROM Students JOIN Courses 
+ON Students.student_id = Courses.student_id
