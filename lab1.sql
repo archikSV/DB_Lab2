@@ -1,3 +1,6 @@
---Practice 1: Select student_name and age (age >= 20).
-SELECT student_name, age FROM Students
-WHERE age >= 20
+--Practice 1: Create Courses table with assosiation to Students table.
+CREATE TABLE Courses (
+course_id SERIAL PRIMARY KEY,
+course_name VARCHAR(100),
+student_id INTEGER REFERENCES Students(student_id)
+)
